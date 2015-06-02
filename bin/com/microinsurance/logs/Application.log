@@ -1,0 +1,62 @@
+24/03/2015 11:23:47 devpinoyLogger *******Started approvePolicy********
+24/03/2015 11:23:47 devpinoyLogger Executing openBrowser
+24/03/2015 11:24:05 devpinoyLogger Pass
+24/03/2015 11:24:05 devpinoyLogger approvePolicy..........openBrowser..................browserType
+24/03/2015 11:24:05 devpinoyLogger Executing navigate
+24/03/2015 11:24:07 devpinoyLogger Pass
+24/03/2015 11:24:07 devpinoyLogger Pass
+24/03/2015 11:24:07 devpinoyLogger approvePolicy..........navigate..................testSiteName
+24/03/2015 11:24:07 devpinoyLogger Executing input
+24/03/2015 11:24:13 devpinoyLogger Pass
+24/03/2015 11:24:13 devpinoyLogger Pass
+24/03/2015 11:24:13 devpinoyLogger approvePolicy..........loginbySuperUser..................
+24/03/2015 11:24:13 devpinoyLogger Executing click
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:18 devpinoyLogger approvePolicy..........click.........policy_xpath.........
+24/03/2015 11:24:18 devpinoyLogger Executing inputproperties
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:18 devpinoyLogger approvePolicy..........inputproperties.........recordsperpage_policy.........entries
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:18 devpinoyLogger Pass
+24/03/2015 11:24:19 devpinoyLogger Pass
+24/03/2015 11:24:34 devpinoyLogger Executing inputproperties
+24/03/2015 11:24:34 devpinoyLogger Pass
+24/03/2015 11:24:34 devpinoyLogger Pass
+24/03/2015 11:24:34 devpinoyLogger Pass
+24/03/2015 11:24:51 devpinoyLogger Executing inputproperties
+24/03/2015 11:24:51 devpinoyLogger Pass
+24/03/2015 11:24:51 devpinoyLogger Pass
+24/03/2015 11:24:51 devpinoyLogger Pass
+24/03/2015 11:25:11 devpinoyLogger Executing inputproperties
+24/03/2015 11:25:11 devpinoyLogger Pass
+24/03/2015 11:25:11 devpinoyLogger Pass
+24/03/2015 11:25:11 devpinoyLogger Pass
+24/03/2015 11:25:28 devpinoyLogger Executing inputproperties
+24/03/2015 11:25:28 devpinoyLogger Pass
+24/03/2015 11:25:29 devpinoyLogger Pass
+24/03/2015 11:25:29 devpinoyLogger Pass
+24/03/2015 11:25:44 devpinoyLogger Executing inputproperties
+24/03/2015 11:25:44 devpinoyLogger Pass
+24/03/2015 11:25:45 devpinoyLogger Pass
+24/03/2015 11:25:45 devpinoyLogger Pass
+24/03/2015 11:26:02 devpinoyLogger Executing inputproperties
+24/03/2015 11:26:02 devpinoyLogger Pass
+24/03/2015 11:26:02 devpinoyLogger Pass
+24/03/2015 11:26:02 devpinoyLogger Pass
+24/03/2015 11:26:17 devpinoyLogger Executing inputproperties
+24/03/2015 11:26:17 devpinoyLogger Pass
+24/03/2015 11:26:18 devpinoyLogger Pass
+24/03/2015 11:26:18 devpinoyLogger Pass
+24/03/2015 11:26:33 devpinoyLogger Executing inputproperties
+24/03/2015 11:26:33 devpinoyLogger Pass
+24/03/2015 11:26:33 devpinoyLogger Pass
+24/03/2015 11:26:33 devpinoyLogger Pass
+24/03/2015 11:26:39 devpinoyLogger fail
+24/03/2015 11:26:39 devpinoyLogger *******Started approvePolicy********
+24/03/2015 11:26:39 devpinoyLogger Executing openBrowser
+24/03/2015 11:26:39 devpinoyLogger Pass
+24/03/2015 11:26:39 devpinoyLogger approvePolicy..........openBrowser..................browserType
+24/03/2015 11:26:39 devpinoyLogger Executing navigate
+24/03/2015 11:26:40 devpinoyLogger Fail - not able to navigate

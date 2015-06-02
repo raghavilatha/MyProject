@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite">
+
+<listeners>
+    <listener class-name="com.microinsurance.listener.TestsListenerAdapter" />
+</listeners>
+
+
+
+
+<test name="test1">
+    <classes>
+        <class name="com.microinsurance.testcases.VerifySuperUser" ></class>  
+    </classes>
+</test>
+
+<test name="test2">
+    <classes>
+        <class name="com.microinsurance.testcases.VerifyValidations_Usam" ></class>  
+    </classes>
+</test>
+
+<test name="test3">
+    <classes>
+        <class name="com.microinsurance.testcases.Actions_Usam" ></class>  
+    </classes>
+</test>
+
+
+</suite>

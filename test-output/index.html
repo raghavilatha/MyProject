@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-My_suite">
+              <span class="suite-name border-failed">My suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-My_suite">
+                    <span>D:\WorkSpaces\maven\DataDrivenTestNG\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-My_suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-My_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-My_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-My_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-My_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-My_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 2 failed,  2 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-My_suite" class="hide-methods failed suite-My_suite"> (hide)</a> <!-- hide-methods failed suite-My_suite -->
+                      <a href="#" panel-name="suite-My_suite" class="show-methods failed suite-My_suite"> (show)</a> <!-- show-methods failed suite-My_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-My_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.Actions_Usam" hash-for-method="testBrowser({loginSuperUser=RunMode})">testBrowser({loginSuperUser=RunMode})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.Actions_Usam" hash-for-method="testBrowser({loginSuperUser=Y})">testBrowser({loginSuperUser=Y})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-My_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-My_suite" class="hide-methods skipped suite-My_suite"> (hide)</a> <!-- hide-methods skipped suite-My_suite -->
+                      <a href="#" panel-name="suite-My_suite" class="show-methods skipped suite-My_suite"> (show)</a> <!-- show-methods skipped suite-My_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-My_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifySuperUser" hash-for-method="loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})">loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.Actions_Usam" hash-for-method="loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})">loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-My_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-My_suite" class="hide-methods passed suite-My_suite"> (hide)</a> <!-- hide-methods passed suite-My_suite -->
+                      <a href="#" panel-name="suite-My_suite" class="show-methods passed suite-My_suite"> (show)</a> <!-- show-methods passed suite-My_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-My_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=...)">addUser_Validations({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123...)">addUser_Validations({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, ema...)">addUser_Validations({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, ema...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=...)">addUser_Validations({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedRe...)">addUser_Validations({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedRe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email12...)">addUser_Validations({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email12...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">addUser_Validations({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_suite" title="com.microinsurance.testcases.VerifyValidations_Usam" hash-for-method="addUser_Validations({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=r...)">addUser_Validations({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-My_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_suite" class="panel My_suite">
+          <div class="suite-My_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.microinsurance.testcases.Actions_Usam</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrowser({loginSuperUser=RunMode})">
+                  </a> <!-- testBrowser({loginSuperUser=RunMode}) -->
+                  <span class="method-name">testBrowser</span>
+                  <span class="parameters">({loginSuperUser=RunMode})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+global
+1433249413051	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1433249413052	DeferredSave.extensions.json	DEBUG	Save changes
+1433249413052	DeferredSave.extensions.json	DEBUG	Save changes
+1433249413052	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;GAxlqbuteIgC&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;38.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1432008660382,&quot;updateDate&quot;:1432008660382,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:3175,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0.1&quot;,&quot;maxVersion&quot;:&quot;38.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1433249413052	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1433249413053	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1433249413053	addons.xpi-utils	DEBUG	Updating add-on states
+1433249413054	addons.xpi-utils	DEBUG	Writing add-ons list
+1433249413062	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1433249413063	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1433249413063	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1433249413063	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1433249413063	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1433249413063	addons.manager	DEBUG	Starting provider: GMPProvider
+1433249413067	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1433249413068	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1433249413068	addons.manager	DEBUG	Starting provider: PluginProvider
+1433249413068	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1433249413068	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1433249413068	addons.manager	DEBUG	Completed startup sequence
+1433249415457	DeferredSave.extensions.json	DEBUG	Starting timer
+1433249415477	DeferredSave.extensions.json	DEBUG	Starting write
+1433249415522	addons.manager	DEBUG	shutdown
+1433249415522	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1433249415522	addons.xpi	DEBUG	shutdown
+1433249415522	addons.xpi-utils	DEBUG	shutdown
+1433249415523	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1433249415523	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1433249415524	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1433249416101	DeferredSave.extensions.json	DEBUG	Write succeeded
+1433249416102	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1433249416102	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1433249416105	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1890: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIAnnotationService.getItemsWithAnnotation]
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;tandl-10&apos;, ip: &apos;172.30.66.121&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.microinsurance.base.TestBase.openBrowser(TestBase.java:85)
+	at com.microinsurance.testcases.Actions_Usam.testBrowser(Actions_Usam.java:30)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;tandl-10&apos;, ip: &apos;172.30.66.121&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 31 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 34 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrowser({loginSuperUser=Y})">
+                  </a> <!-- testBrowser({loginSuperUser=Y}) -->
+                  <span class="method-name">testBrowser</span>
+                  <span class="parameters">({loginSuperUser=Y})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+global
+1433249456912	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1433249456912	DeferredSave.extensions.json	DEBUG	Save changes
+1433249456912	DeferredSave.extensions.json	DEBUG	Save changes
+1433249456912	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;rBmYONP_hhZV&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;38.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1432008660382,&quot;updateDate&quot;:1432008660382,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:3175,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0.1&quot;,&quot;maxVersion&quot;:&quot;38.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1433249456912	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1433249456914	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1433249456914	addons.xpi-utils	DEBUG	Updating add-on states
+1433249456915	addons.xpi-utils	DEBUG	Writing add-ons list
+1433249456923	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1433249456923	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1433249456923	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1433249456924	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1433249456924	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1433249456924	addons.manager	DEBUG	Starting provider: GMPProvider
+1433249456928	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1433249456928	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1433249456928	addons.manager	DEBUG	Starting provider: PluginProvider
+1433249456928	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1433249456929	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1433249456929	addons.manager	DEBUG	Completed startup sequence
+1433249458991	DeferredSave.extensions.json	DEBUG	Starting timer
+1433249459033	DeferredSave.extensions.json	DEBUG	Starting write
+1433249459040	addons.manager	DEBUG	shutdown
+1433249459041	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1433249459041	addons.xpi	DEBUG	shutdown
+1433249459041	addons.xpi-utils	DEBUG	shutdown
+1433249459041	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1433249459042	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1433249459043	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1433249459537	DeferredSave.extensions.json	DEBUG	Write succeeded
+1433249459537	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1433249459538	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1433249459541	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1890: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIAnnotationService.getItemsWithAnnotation]
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;tandl-10&apos;, ip: &apos;172.30.66.121&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.microinsurance.base.TestBase.openBrowser(TestBase.java:85)
+	at com.microinsurance.testcases.Actions_Usam.testBrowser(Actions_Usam.java:30)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;tandl-10&apos;, ip: &apos;172.30.66.121&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 31 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 34 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_suite-class-failed -->
+          <div class="suite-My_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.microinsurance.testcases.Actions_Usam</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})">
+                  </a> <!-- loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password}) -->
+                  <span class="method-name">loginSuperUser</span>
+                  <span class="parameters">({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is NO
+	at com.microinsurance.testcases.VerifySuperUser.loginSuperUser(VerifySuperUser.java:25)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_suite-class-skipped -->
+          <div class="suite-My_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.microinsurance.testcases.VerifySuperUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})">
+                  </a> <!-- loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password}) -->
+                  <span class="method-name">loginSuperUser</span>
+                  <span class="parameters">({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is NO
+	at com.microinsurance.testcases.VerifySuperUser.loginSuperUser(VerifySuperUser.java:25)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_suite-class-skipped -->
+          <div class="suite-My_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.microinsurance.testcases.VerifyValidations_Usam</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter State, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter City, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter a valid email id, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, ema...)">
+                  </a> <!-- addUser_Validations({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, ema...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Postal Code should not contain special characters., firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter User Department, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter Last Name, firstName=A1, lastName=, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Mobile Number should should be in Numerics., firstName=A1, lastName=A2, mobileNumber=fdsdsfdsf})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedRe...)">
+                  </a> <!-- addUser_Validations({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedRe...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedResult=Please enter First Name, firstName=, lastName=, mobileNumber=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=First Name should not contain special characters., firstName=sds$#@##, lastName=A1, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Last Name should not contain special characters., firstName=A1, lastName=adsa@#!#!, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Invalid email, Please enter valid email id., firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter Mobile Number, firstName=A1, lastName=A2, mobileNumber=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Mobile Number should should be in Numerics., firstName=A1, lastName=A2, mobileNumber=#@#@!##})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email12...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email12...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter Address, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)">
+                  </a> <!-- addUser_Validations({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter First Name, firstName=, lastName=A1, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser_Validations({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=r...)">
+                  </a> <!-- addUser_Validations({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=r...) -->
+                  <span class="method-name">addUser_Validations</span>
+                  <span class="parameters">({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=raghavi@gmail.com, RunMode=Y, expectedResult=Please enter Postal Code, firstName=A1, lastName=A2, mobileNumber=9.591091851E9})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_suite-class-passed -->
+        </div> <!-- panel My_suite -->
+        <div panel-name="test-xml-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\WorkSpaces\maven\DataDrivenTestNG\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;My suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.microinsurance.listener.TestsListenerAdapter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.microinsurance.testcases.VerifySuperUser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test1 --&gt;
+  &lt;test name=&quot;test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.microinsurance.testcases.VerifyValidations_Usam&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test2 --&gt;
+  &lt;test name=&quot;test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.microinsurance.testcases.Actions_Usam&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test3 --&gt;
+&lt;/suite&gt; &lt;!-- My suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test3 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_suite');
+function tableData_My_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testBrowser')
+data.setCell(0, 2, 'com.microinsurance.testcases.Actions_Usam')
+data.setCell(0, 3, 49024);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testBrowser')
+data.setCell(1, 2, 'com.microinsurance.testcases.Actions_Usam')
+data.setCell(1, 3, 46365);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addUser_Validations')
+data.setCell(2, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(2, 3, 61);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginSuperUser')
+data.setCell(3, 2, 'com.microinsurance.testcases.VerifySuperUser')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addUser_Validations')
+data.setCell(4, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addUser_Validations')
+data.setCell(5, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addUser_Validations')
+data.setCell(6, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addUser_Validations')
+data.setCell(7, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addUser_Validations')
+data.setCell(8, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addUser_Validations')
+data.setCell(9, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addUser_Validations')
+data.setCell(10, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addUser_Validations')
+data.setCell(11, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'addUser_Validations')
+data.setCell(12, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addUser_Validations')
+data.setCell(13, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addUser_Validations')
+data.setCell(14, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'addUser_Validations')
+data.setCell(15, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'addUser_Validations')
+data.setCell(16, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addUser_Validations')
+data.setCell(17, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addUser_Validations')
+data.setCell(18, 2, 'com.microinsurance.testcases.VerifyValidations_Usam')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'loginSuperUser')
+data.setCell(19, 2, 'com.microinsurance.testcases.Actions_Usam')
+data.setCell(19, 3, 0);
+window.suiteTableData['My_suite']= { tableData: data, tableDiv: 'times-div-My_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-My_suite">
+              </div> <!-- times-div-My_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.microinsurance.testcases.VerifySuperUser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.microinsurance.testcases.VerifyValidations_Usam</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=, userDepartment=, state=, address2=, address1=, city=, email123=, RunMode=Y, expectedRe...)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr424, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr425, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr426, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr427, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr428, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr429, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr430, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr431, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr432, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, emai...)</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr433, userDepartment=, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=...)</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr434, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=, city=zxzx, email12...)</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr435, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=, email123...)</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=ewr436, userDepartment=Agent, state=, address2=zxzxz, address1=zxz, city=zxzx, email123=...)</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, email123=r...)</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser_Validations({postalCode=eqw@##!, userDepartment=Agent, state=zxzxz, address2=zxzxz, address1=zxz, city=zxzx, ema...)</span>
+                <span class="method-start">182 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.microinsurance.testcases.Actions_Usam</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBrowser({loginSuperUser=RunMode})</span>
+                <span class="method-start">192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBrowser({loginSuperUser=Y})</span>
+                <span class="method-start">49216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginSuperUser({Username=superuser@tarangtech.com, Captcha=qqqq, RunMode=Y, Password=password})</span>
+                <span class="method-start">95582 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
